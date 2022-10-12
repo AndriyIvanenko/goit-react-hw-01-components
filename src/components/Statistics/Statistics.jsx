@@ -9,7 +9,7 @@ import {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <StatSection>
+    <StatSection style={{ width: `calc(75px * ${stats.length})` }}>
       {title && <StatsHeader>{title}</StatsHeader>}
 
       <StatList>

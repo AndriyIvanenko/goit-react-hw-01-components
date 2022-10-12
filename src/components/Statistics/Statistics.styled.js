@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StatSection = styled.section`
-  width: 362px;
   height: auto;
   margin: auto;
   margin-bottom: 40px;
@@ -26,7 +25,7 @@ export const StatList = styled.ul`
 `;
 
 export const StatItem = styled.li`
-  width: calc(365px / 5);
+  width: 75px;
 
   display: flex;
   flex-direction: column;

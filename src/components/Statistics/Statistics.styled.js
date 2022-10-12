@@ -6,8 +6,10 @@ export const StatSection = styled.section`
   margin: auto;
   margin-bottom: 40px;
 
-  border-radius: 14px;
+  border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  overflow: hidden;
 `;
 
 export const StatsHeader = styled.h2`
@@ -21,18 +23,17 @@ export const StatsHeader = styled.h2`
 export const StatList = styled.ul`
   display: flex;
   width: 100%;
-  overflow: hidden;
 `;
 
 export const StatItem = styled.li`
   width: calc(365px / 5);
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding-top: 15px;
   padding-bottom: 15px;
-
-  overflow: hidden;
 `;
 
 export const Label = styled.span`

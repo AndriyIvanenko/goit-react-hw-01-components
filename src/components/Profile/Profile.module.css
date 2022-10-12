@@ -10,6 +10,8 @@
 
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  overflow: hidden;
 }
 
 .description {
@@ -47,9 +49,7 @@
 
 .stats {
   display: flex;
-
   border-top: 1px solid rgb(194, 194, 194);
-  overflow: hidden;
 }
 
 .statsItem {

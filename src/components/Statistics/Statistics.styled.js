@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StatSection = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: fit-content;
 
   margin: auto;
@@ -17,7 +16,6 @@ export const StatSection = styled.section`
 
 export const StatsHeader = styled.h2`
   width: 100%;
-  margin: auto;
   padding-top: 20px;
   padding-bottom: 30px;
 

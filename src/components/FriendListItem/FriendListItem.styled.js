@@ -21,20 +21,11 @@ export const Avatar = styled.img`
   margin-right: 10px;
 `;
 
-export const StatusOnline = styled.span`
+export const Status = styled.span`
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: green;
-
-  margin-right: 10px;
-`;
-
-export const StatusOffline = styled.span`
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: red;
+  background-color: ${props => (props.isOnline ? 'green' : 'red')};
 
   margin-right: 10px;
 `;

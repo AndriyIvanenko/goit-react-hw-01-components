@@ -1,0 +1,23 @@
+.transactionHistory {
+  width: 750px;
+  margin: auto;
+  margin-bottom: 40px;
+
+  /* border-collapse: collapse; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.tableHeadCell {
+  width: 250px;
+  height: 30px;
+  background-color: #5fc1e7;
+  color: #fff;
+  font-size: 15px;
+}
+
+.tableCell {
+  text-align: center;
+  height: 30px;
+  color: #999999;
+  font-size: 13px;
+}

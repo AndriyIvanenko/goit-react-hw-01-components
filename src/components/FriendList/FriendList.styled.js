@@ -15,6 +15,7 @@ export const FriendListItem = styled.li`
 
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
 `;
 
 export const Avatar = styled.img`

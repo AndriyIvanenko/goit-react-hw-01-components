@@ -17,6 +17,7 @@ export const StatsHeader = styled.h2`
   padding-bottom: 30px;
 
   text-align: center;
+  background-color: #fff;
 `;
 
 export const StatList = styled.ul`

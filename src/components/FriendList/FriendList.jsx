@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Avatar, FriendListItem, Status, List, Name } from './FriendList.styled';
 
 export const FriendList = ({ friends }) => {
@@ -12,4 +13,8 @@ export const FriendList = ({ friends }) => {
       ))}
     </List>
   );
+};
+
+FriendList.propTypes = {
+  friends: PropTypes.array,
 };

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   Label,
   Percentage,
@@ -27,4 +29,9 @@ export const Statistics = ({ title, stats }) => {
       </StatList>
     </StatSection>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array,
 };

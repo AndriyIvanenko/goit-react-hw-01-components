@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const StatSection = styled.section`
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+
   margin: auto;
   margin-bottom: 40px;
 
@@ -12,6 +16,7 @@ export const StatSection = styled.section`
 `;
 
 export const StatsHeader = styled.h2`
+  width: 100%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -22,7 +27,6 @@ export const StatsHeader = styled.h2`
 
 export const StatList = styled.ul`
   display: flex;
-  width: 100%;
 `;
 
 export const StatItem = styled.li`

@@ -11,7 +11,7 @@ import {
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <StatSection style={{ width: `calc(75px * ${stats.length})` }}>
+    <StatSection>
       {title && <StatsHeader>{title}</StatsHeader>}
 
       <StatList>
@@ -33,5 +33,5 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array,
+  stats: PropTypes.arrayOf(PropTypes.object),
 };

@@ -13,20 +13,38 @@ export const TransactionHistory = ({ transactions }) => {
       </thead>
 
       <tbody>
-        {transactions.map((transaction, index) => (
-          <tr key={transaction.id} style={{ backgroundColor: `${index % 2 ? '#e0e0e0' : '#fff'}` }}>
-            <td className={css.tableCell}>
-              {transaction.type.charAt(0).toUpperCase() + transaction.type.slice(1)}
-            </td>
-            <td className={css.tableCell}>{transaction.amount}</td>
-            <td className={css.tableCell}>{transaction.currency}</td>
-          </tr>
-        ))}
+        {transactions.map(
+          (transaction, index) =>
+            index % 2 ? (
+              <tr key={transaction.id} className={css.oddRow}>
+                <td className={css.tableCell}>
+                  {transaction.type.charAt(0).toUpperCase() + transaction.type.slice(1)}
+                </td>
+                <td className={css.tableCell}>{transaction.amount}</td>
+                <td className={css.tableCell}>{transaction.currency}</td>
+              </tr>
+            ) : (
+              <tr key={transaction.id} className={css.evenRow}>
+                <td className={css.tableCell}>
+                  {transaction.type.charAt(0).toUpperCase() + transaction.type.slice(1)}
+                </td>
+                <td className={css.tableCell}>{transaction.amount}</td>
+                <td className={css.tableCell}>{transaction.currency}</td>
+              </tr>
+            )
+          //   <tr key={transaction.id} style={{ backgroundColor: `${index % 2 ? '#e0e0e0' : '#fff'}` }}>
+          //     <td className={css.tableCell}>
+          //       {transaction.type.charAt(0).toUpperCase() + transaction.type.slice(1)}
+          //     </td>
+          //     <td className={css.tableCell}>{transaction.amount}</td>
+          //     <td className={css.tableCell}>{transaction.currency}</td>
+          //   </tr>
+        )}
       </tbody>
     </table>
   );
 };
 
 TransactionHistory.propTypes = {
-  transactions: PropTypes.array,
+  transactions: PropTypes.arrayOf(PropTypes.object),
 };

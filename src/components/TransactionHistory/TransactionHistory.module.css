@@ -7,6 +7,14 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.evenRow {
+  background-color: #fff;
+}
+
+.oddRow {
+  background-color: #e0e0e0;
+}
+
 .tableHeadCell {
   width: 250px;
   height: 30px;
